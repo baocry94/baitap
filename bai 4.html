@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var year = parseInt(prompt("Nhập số năm"))
+var isleapyear = false
+
+var isdivisibleby4 = year % 4 == 0;
+if (isdivisibleby4){
+var isdivisibleby100 = year % 100 == 0;
+if (isdivisibleby100){
+var isdivisibleby400 = year % 400 == 0 ;
+if (isdivisibleby400){
+isleapyear = true;
+}
+}else {
+isleapyear = true;
+}
+}
+
+if (isleapyear){
+alert(year + " là năm nhuận")
+} else {
+alert(year + " không phải năm nhuận")
+}
+</script>
+</body>
+</html>
